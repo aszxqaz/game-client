@@ -1,0 +1,60 @@
+@icon-slash: "\e904";
+@icon-archery: "\e900";
+@icon-health: "\e901";
+@icon-spell: "\e902";
+@icon-sword: "\e903";
+
+@font-face {
+  font-family: 'abilities';
+  src: url('/abilities.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'abilities' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-size: 1rem;
+  color: rgba(0,0,0,.8);
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-slash {
+  &:before {
+    content: @icon-slash;
+  }
+}
+
+.icon-archery {
+  &:before {
+    content: @icon-archery;
+  }
+}
+
+.icon-health {
+  &:before {
+    content: @icon-health;
+  }
+}
+
+.icon-spell {
+  &:before {
+    content: @icon-spell;
+  }
+}
+
+.icon-sword {
+  &:before {
+    content: @icon-sword;
+  }
+}

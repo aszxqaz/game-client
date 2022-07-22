@@ -1,0 +1,41 @@
+.board {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex: 1 0 100%;
+  display: grid;
+  place-items: center;
+  &__grid {
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    gap: 6vw;
+
+  }
+
+  &__opponent {
+    align-self: end;
+  }
+
+  &__player-first-row {
+    margin-bottom: -4vw;
+  }
+
+  &__opponent-first-row {
+    margin-top: -4vw;
+  }
+}
+
+.row {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.swiper {
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+  overflow: visible !important;
+}
